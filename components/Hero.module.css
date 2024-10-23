@@ -1,0 +1,18 @@
+.nav{
+    background-color: #ffffffdb;
+    color: black;
+    padding: 10px 0px;
+    padding-left: 15px;
+    font-weight: 900;
+    font-size: x-large;
+    backdrop-filter: blur(-10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.389);
+}
+
+@media (min-width:640px) {
+    .nav{
+        background-color: rgba(255, 255, 255, 0.551);
+        color: black;
+        max-width: 100%;
+    }
+}

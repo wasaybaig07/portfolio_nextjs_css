@@ -25,7 +25,7 @@ function page() {
   },[])
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <Cards />
       <About />
