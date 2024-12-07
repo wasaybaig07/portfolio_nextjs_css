@@ -1,0 +1,56 @@
+/* mr-0 sm:w-full bg-[url-(/image1.jpg)] h-[70vh] bg-no-repeat bg-center bg-cover */
+.body {
+  margin-right: 0px;
+  /* background-image: url(coding.jpg); */
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* bg-purple-600 flex justify-between */
+
+.main {
+  background-color: rgba(171, 0, 171, 0.764);
+  display: flex;
+  justify-content: space-between;
+}
+/* 'text-xl font-extrabold flex items-center ml-6 my-3 sm:text-xl sm:font-extrabold sm:flex sm:items-center sm:ml-3' */
+
+.main2 {
+  font-size: larger;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-left:24px ;
+  margin-top: 12px;  
+  margin-bottom: 12px;  
+}
+/* cursor-pointer hover:bg-purple-300 hover:rounded-md p-1 py-2 px-2 my-3' */
+
+.child{
+    cursor: pointer;
+    padding: 4px;
+    padding-top: 8px;
+    padding-bottom:8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.child:hover{
+    background-color: rgb(169, 64, 169);
+    border-radius: 12px;
+}
+
+@media (min-width: 640px) {
+  .body {
+    width: 100%;
+  }
+  .main2{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+  }
+
+}

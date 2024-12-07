@@ -1,15 +1,30 @@
-import React from 'react'
-import { BiLogoTypescript } from 'react-icons/bi'
+import React from "react";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiTypescript } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa6";
+import { FaHtml5 } from "react-icons/fa6";
+import { FaCss3Alt } from "react-icons/fa6";
+import { RiNextjsFill } from "react-icons/ri";
+import style from '@/components/Projects.module.css'
 
 function About() {
   return (
-    <div className=' flex justify-center sm:flex sm:justify-center sm:items-center'>
-        <div className='flex text-black text-center hover:border-slate-300 rounded-md flex-col hover:border-x-4 items-center mb-[100px] border-4 w-10/12 border-x-0 border-x-slate-200 h-fit hover:bg-purple-600 sm:flex sm:flex-col sm:items-center sm:justify-center sm:hover:border-x-8 sm:hover:border-slate-300 sm:mt-[0px] sm:h-72 sm:w-6/12 sm:mb-[100px] hover:text-slate-100 transition duration-300 ease-in md:h-fit lg:h-fit'>
-            <h1 className='text-2xl font-extrabold mt-0 sm:pt-4' data-aos="fade-left">About Me:</h1>
-            <h1 className='text-xl font-medium my-2 px-3 sm:text-center sm:leading-loose sm:text-2xl' data-aos="fade-right">My Name is Mirza Abdul Wasay Baig.I am a student at GIAIC.I specialize in Typescript , Node.js , Next.js , HMTL , Vanilla CSS and Tailwind CSS.</h1>
-        </div>
+    <div>
+    <div className={style.about}>
+      <h1 className={style.name}>About Me:</h1>
+      <p className={style.desc}>I am a student at GIAIC , I specialize in HTML , CSS , Javascript and Typescript and i am currently learning nextjs</p>
     </div>
-  )
+      <div className={style.lang}>
+        <BiLogoTypescript className={style.icon} size={180}/>
+        <SiTailwindcss className={style.icon} size={180}/>
+        <FaNodeJs className={style.icon} size={180}/>
+        <FaHtml5 className={style.icon} size={180}/>
+        <FaCss3Alt className={style.icon} size={180}/>
+        <RiNextjsFill className={style.icon} size={180}/>
+      </div>
+    </div>
+  );
 }
 
-export default About
+export default About;

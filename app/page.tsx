@@ -9,8 +9,7 @@ import Cards from '@/components/Cards';
 import "aos/dist/aos.css";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
-import Icons from "@/components/Icons"
-
+import Contact from '@/components/Contact'; 
 function page() {
   useEffect(() => {
     AOS.init({
@@ -25,11 +24,11 @@ function page() {
   },[])
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <Hero />
       <Cards />
       <About />
-      <Icons />
+      <Contact />
       <Footer />
     </div>
   )
